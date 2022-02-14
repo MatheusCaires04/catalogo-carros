@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --orange: #f78b00;
+    --blue: #00285f;
+    --gray: #ededed;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background-color: var(--orange);
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 24px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00285f83;
+}
+
+nav ul button {
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 8px 40px;
+    margin-left: 30px;
+    color: var(--blue);
+    font-weight: bold;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+nav ul button:hover {
+    background-color: var(--blue);
+    color: #FFF;
+}
+
+.content .header--block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+
+.header--block img {
+    width: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.header--block .text {
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+
+.header--block h2 {
+    color: #FFF;
+    margin-bottom: 20px;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.5s;
+}
+
+.header--block .text p {
+    max-width: 280px;
+    color: #FFF;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.5s;
+}
+
+section .catalog {
+    width: 100vw;
+    padding: 100px;
+}
+
+.content .filter--card {
+    width: 980px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--gray);
+    border-radius: 10px;
+}
+
+.search--input {
+    width: 70%;
+    height: 50px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    text-indent: 10px;
+}
+
+.search--button {
+    width: 150px;
+    height: 50px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background-color: var(--blue);
+    font-size: 1.1rem;
+    color: #FFF;
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.search--button:hover {
+    background-color: #dedede;
+    color: var(--blue);
+}
+
+.title--wrapper--catalog {
+    margin-top: 200px;
+    padding-bottom: 20px;
+}
+
+.content .card--wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.card--item {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: var(--gray);
+}
+
+.card--item img {
+    width: 85%;
+}
+
+.card--content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card--content h3 {
+    width: 90%;
+}
+
+.card--content p {
+    width: 90%;
+    font-style: italic;
+    color: #00000070;
+}
+
+.card--content button {
+    width: 90%;
+    padding: 15px 0;
+    border: none;
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.card--content button:hover {
+    background-color: #dedede;
+    color: var(--blue);
+}
